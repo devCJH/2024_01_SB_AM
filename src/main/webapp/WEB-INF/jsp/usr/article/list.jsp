@@ -1,16 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>LIST</title>
-</head>
-<body>
-	<h1>LIST PAGE</h1>
-	
-	<table border="1">
+
+	<c:set var="pageTitle" value="LIST" />
+
+<%@ include file="../common/header.jsp" %>
+	<table>
 		<thead>
 			<tr>
 				<th>번호</th>
@@ -30,5 +25,4 @@
 			</c:forEach>
 		</tbody>
 	</table>
-</body>
-</html>
+<%@ include file="../common/footer.jsp" %>
